@@ -13,10 +13,10 @@ interface RoomType {
 
 const rooms: RoomType[] = [
   {
-    name: "Deluxe twin",
+    name: "Executive twin",
     description: "Spacious suite with city views, featuring a king-size bed and luxuries.",
     price: "$299",
-    vrTour: "https://kuula.co/share/collection/7bTPM?logo=1&info=0&logosize=105&fs=0&vr=1&zoom=1&sd=1&initload=0&autorotate=0.04&thumbs=-1",
+    vrTour: "https://kuula.co/share/collection/7bMtz?logo=1&info=0&logosize=105&fs=0&vr=1&zoom=1&sd=1&initload=0&autorotate=0.04&thumbs=-1",
     amenities: ["Free Wi-Fi", "Mini Bar", "Smart TV", "Rainfall Shower"],
     size: "45m²",
     occupancy: "2 Adults, 1 Child"
