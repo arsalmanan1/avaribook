@@ -16,7 +16,7 @@ const rooms: RoomType[] = [
     name: "Executive twin",
     description: "Spacious suite with city views, featuring a king-size bed and luxuries.",
     price: "$299",
-    vrTour: "https://kuula.co/share/collection/7bMtz?logo=1&info=0&logosize=105&fs=0&vr=1&zoom=1&sd=1&initload=0&autorotate=0.04&thumbs=-1",
+    vrTour: "https://kuula.co/share/collection/7bMtz?logo=1&info=1&logosize=168&fs=0&vr=1&zoom=1&gyro=0&autorotate=0.04&thumbs=-1",
     amenities: ["Free Wi-Fi", "Mini Bar", "Smart TV", "Rainfall Shower"],
     size: "45m²",
     occupancy: "2 Adults, 1 Child"
@@ -25,7 +25,7 @@ const rooms: RoomType[] = [
     name: "Deluxe King",
     description: "Modern room with work space, perfect for business travelers.",
     price: "$199",
-    vrTour: "https://kuula.co/share/collection/7bTPb?logo=1&info=0&logosize=105&fs=0&vr=1&zoom=1&sd=1&initload=0&autorotate=0.04&thumbs=-1",
+    vrTour: "https://kuula.co/share/collection/7bTPb?logo=1&info=1&logosize=168&fs=0&vr=1&zoom=1&gyro=0&autorotate=0.04&thumbs=-1",
     amenities: ["Work Desk", "Free Wi-Fi", "Coffee Machine", "LED TV"],
     size: "35m²",
     occupancy: "2 Adults"
@@ -34,7 +34,7 @@ const rooms: RoomType[] = [
     name: "Executive Room",
     description: "Luxury suite with separate living area and panoramic views.",
     price: "$399",
-    vrTour: "https://kuula.co/share/collection/7bTPh?logo=1&info=0&logosize=105&fs=0&vr=1&zoom=1&sd=1&initload=0&autorotate=0.04&thumbs=-1",
+    vrTour: "https://kuula.co/share/collection/7bTPh?logo=1&info=1&logosize=168&fs=0&vr=1&zoom=1&gyro=0&autorotate=0.04&thumbs=-1",
     amenities: ["Balcony", "Mini Kitchen", "Premium TV", "Jacuzzi Bath"],
     size: "60m²",
     occupancy: "3 Adults"
@@ -112,6 +112,32 @@ const RoomTypes: React.FC = () => {
 ))}
 
 
+        </div>
+
+        {/* Full Hotel Virtual Tour Section */}
+        <div className="mt-16">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl md:text-3xl font-serif font-bold text-[#1E3A8A] mb-4">
+              Avari Hotel Full Tour
+            </h3>
+            <div className="w-20 h-1 bg-[#3B82F6] mx-auto mb-6"></div>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Take a complete virtual tour of our hotel and discover all the amenities and spaces we have to offer.
+            </p>
+          </div>
+          
+          <div className="bg-white rounded-lg shadow-lg p-4 md:p-6">
+            <div className="relative w-full" style={{ height: '500px' }}>
+              <iframe 
+                className="ku-embed w-full h-full rounded-lg" 
+                frameBorder="0" 
+                allow="xr-spatial-tracking; gyroscope; accelerometer" 
+                allowFullScreen 
+                scrolling="no" 
+                src="https://kuula.co/share/collection/7bHQv?logo=1&info=1&fs=0&vr=0&zoom=1&gyro=0&autorotate=0.04&thumbs=4"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </section>
